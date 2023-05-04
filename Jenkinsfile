@@ -13,8 +13,7 @@ pipeline {
         stage('Printing name') {
             steps {
                 script {
-            
-                #Create an image from the dockerfile with the docker.sock of the host
+                    
                 docker.build("jenkins-docker")
 
                 }
