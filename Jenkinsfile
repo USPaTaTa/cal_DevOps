@@ -13,23 +13,8 @@ pipeline {
         stage('Printing name') {
             steps {
                 script {
-                    def prenom = "${params.PRENOM}"
-                    def nom = "${params.NOM}"
-                    def taille = "${params.TAILLE}"
-                    def poids = "${params.POIDS}"
-                    def sexe = "${params.SEXE}"
-                    def objectifpoids = "${params.OBJECTIFPOIDS}"
-
-                     echo "$prenom"
-                      echo "$nom"
-                       echo "$taille"
-                        echo "$poids"
-                         echo "$sexe"
-                            echo "$objectifpoids"
+            
                 sh 'python fatsecret.py'
-
-
-
 
                 }
             }
