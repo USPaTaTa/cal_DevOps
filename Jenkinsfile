@@ -13,8 +13,8 @@ pipeline {
         stage('Printing name') {
             steps {
                 script {
-                    
-                docker.build("jenkins-docker")
+
+                sh "docker compose up -d"
 
                 }
             }
