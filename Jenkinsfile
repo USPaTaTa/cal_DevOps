@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
 
-                sh "docker compose up"
+                sh "sudo docker compose down && sudo docker compose up && sudo docker compose down"
 
                 }
             }
