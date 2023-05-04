@@ -22,8 +22,8 @@ pipeline {
                        echo "$branch"
                         echo "$skip_test"
                          echo "$sonar_server_pwd"
-
-
+                    python /var/jenkins_home/python/fatsecret.py
+                       
 
 
                 }
