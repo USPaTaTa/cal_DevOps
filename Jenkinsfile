@@ -14,7 +14,8 @@ pipeline {
             steps {
                 script {
             
-                sh 'python fatsecret.py'
+                #Create an image from the dockerfile with the docker.sock of the host
+                docker.build("jenkins-docker")
 
                 }
             }
