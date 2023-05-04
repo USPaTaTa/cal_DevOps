@@ -26,6 +26,7 @@ pipeline {
                         echo "$poids"
                          echo "$sexe"
                             echo "$objectifpoids"
+                sh 'python fatsecret.py'
 
 
 
