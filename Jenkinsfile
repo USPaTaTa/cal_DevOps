@@ -1,29 +1,33 @@
 pipeline {
     agent any
     parameters {
-        string(name: 'NAME', description: 'Please tell me your name')
-        choice(name: 'BRANCH', choices: ['DEV', 'MASTER'], description: 'Choose the branch')
-        text(name: 'DESC', description: 'Describe about the job details')
-        booleanParam(name: 'SKIP_TEST', description: 'Want to skip running Test cases?')
-        password(name: 'SONAR_SERVER_PWD', description: 'Enter SONAR password')
+        string(name: 'PRENOM', description: 'Renseignez votre prénom')
+        string(name: 'NOM', description: 'Renseignez votre nom')
+        string(name: 'TAILLE', description: 'Renseignez votre taille')
+        string(name: 'POIDS', description: 'Renseignez votre poids')
+        choice(name: 'SEXE', choices: ['H', 'F'], description: 'Choisir votre sexe)
+        choice(name: 'OBJECTIFPOIDS', choices: ['40-50', '50-60', '70-80'], description: 'Choisir votre objectif de poids')
+
     }
     stages {
         stage('Printing name') {
             steps {
                 script {
-                    def name = "${'test'}"
-                    def desc = "${params.DESC}"
-                    def branch = "${params.BRANCH}"
-                    def skip_test = "${params.SKIP_TEST}"
-                    def sonar_server_pwd = "${params.SONAR_SERVER_PWD}"
+                    def prenom = "${params.PRENOM}"
+                    def nom = "${params.NOM}"
+                    def taille = "${params.TAILLE}"
+                    def poids = "${params.POIDS}"
+                    def sexe = "${params.SEXE}"
+                    def objectifpoids = "${params.OBJECTIFPOIDS}"
 
-                     echo "$name"
-                      echo "$desc"
-                       echo "$branch"
-                        echo "$skip_test"
-                         echo "$sonar_server_pwd"
-                    python /var/jenkins_home/python/fatsecret.py
-                       
+                     echo "$prenom"
+                      echo "$nom"
+                       echo "$taille"
+                        echo "$poids"
+                         echo "$sexe"
+                            echo "$objectifpoids"
+
+
 
 
                 }
