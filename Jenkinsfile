@@ -9,6 +9,14 @@ pipeline {
         choice(name: 'OBJECTIFPOIDS', choices: ['40-50', '50-60', '70-80'], description: 'Choisir votre objectif de poids')
 
     }
+    environment {
+        PRENOM = "${params.PRENOM}"
+        NOM = "${params.NOM}"
+        TAILLE = "${params.TAILLE}"
+        POIDS = "${params.POIDS}"
+        SEXE = "${params.SEXE}"
+        OBJECTIFPOIDS = "${params.OBJECTIFPOIDS}"
+    }
     stages {
         stage('Printing name') {
             steps {

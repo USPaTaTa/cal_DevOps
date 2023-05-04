@@ -1,5 +1,11 @@
 services:
   python_script:
-    restart: unless-stopped
     container_name: python_script
     build: .
+    environment:
+      - PRENOM=${PRENOM}
+      - NOM=${NOM}
+      - TAILLE=${TAILLE}
+      - POIDS=${POIDS}
+      - SEXE=${SEXE}
+      - OBJECTIFPOIDS=${OBJECTIFPOIDS}
