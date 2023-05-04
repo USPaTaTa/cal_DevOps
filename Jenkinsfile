@@ -11,7 +11,7 @@ pipeline {
         stage('Printing name') {
             steps {
                 script {
-                    def name = "${params.NAME}"
+                    def name = "${'test'}"
                     def desc = "${params.DESC}"
                     def branch = "${params.BRANCH}"
                     def skip_test = "${params.SKIP_TEST}"
