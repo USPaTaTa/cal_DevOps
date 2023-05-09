@@ -9,6 +9,13 @@ class fatsecret:
     self.sexe = chr(sexe)
     self.objectifpoids = str(objectifpoids)
     self.objectifprecedent = str(objectifprecedent)
+    print(type(self.prenom))
+    print(type(self.nom))
+    print(type(self.taille))
+    print(type(self.poids))
+    print(type(self.sexe))
+    print(type(self.objectifpoids))
+    print(type(self.objectifprecedent))
     self.IMC()
     self.interpetrationIMC()
     
