@@ -23,7 +23,7 @@ pipeline {
             steps {
                 script {
 
-                sh "docker compose down && docker compose up && docker compose down"
+                sh "docker compose down && docker compose build --no-cache && docker compose up"
 
                 }
             }
