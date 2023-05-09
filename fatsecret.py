@@ -56,7 +56,7 @@ class fatsecret:
     print(f'Objectif poids: {self.objectifpoids}')
     print(f'Objectif précédent: {self.objectifprecedent}')
     print(f'IMC: {self.imc}')
-    print(f'Interprétation IMC: {self.interpetration_IMC}')
+    print(f'Interprétation IMC: {self.interpetration_IMC()}')
     print('---------------------------------')
     if self.sexe == "H":
       if self.objectifprecedent == "Réussi":
