@@ -40,7 +40,7 @@ class fatsecret:
   
   def IMC(self):
     taille_m = int(self.taille) / 100
-    imc = self.poids / (taille_m ** 2)
+    imc = float(self.poids) / (taille_m * 2)
     self.imc = imc
     return imc
   
