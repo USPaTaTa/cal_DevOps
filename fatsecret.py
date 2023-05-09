@@ -1,12 +1,12 @@
 
 class fatsecret:
   """Objet """
-  def __init__(self, prenom=str, nom=str, taille=int, poids=float, sexe=chr, objectifpoids=str, objectifprecedent=str):
+  def __init__(self, prenom=str, nom=str, taille=int, poids=float, sexe=str, objectifpoids=str, objectifprecedent=str):
     self.prenom = str(prenom)
     self.nom = str(nom)
     self.taille = int(taille)
     self.poids = float(poids)
-    self.sexe = chr(sexe)
+    self.sexe = str(sexe)
     self.objectifpoids = str(objectifpoids)
     self.objectifprecedent = str(objectifprecedent)
     print(type(self.prenom))
