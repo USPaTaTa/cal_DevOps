@@ -2,13 +2,13 @@
 class fatsecret:
   """Objet """
   def __init__(self, prenom=str, nom=str, taille=int, poids=float, sexe=chr, objectifpoids=str, objectifprecedent=str):
-    self.prenom = prenom
-    self.nom = nom
-    self.taille = taille
-    self.poids = poids
-    self.sexe = sexe
-    self.objectifpoids = objectifpoids
-    self.objectifprecedent = objectifprecedent
+    self.prenom = str(prenom)
+    self.nom = str(nom)
+    self.taille = int(taille)
+    self.poids = float(poids)
+    self.sexe = chr(sexe)
+    self.objectifpoids = str(objectifpoids)
+    self.objectifprecedent = str(objectifprecedent)
     self.IMC()
     self.interpetrationIMC()
     
@@ -40,8 +40,8 @@ class fatsecret:
       raise Exception('Erreur dans la fonction interpetrationIMC')
   
   def IMC(self):
-    taille_m = int(self.taille) / 100
-    imc = float(self.poids) / (taille_m * 2)
+    taille_m = self.taille / 100
+    imc = self.poids / (taille_m ** 2)
     self.imc = imc
     return imc
   
