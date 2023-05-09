@@ -6,8 +6,8 @@ pipeline {
         string(name: 'TAILLE', description: 'Renseignez votre taille')
         string(name: 'POIDS', description: 'Renseignez votre poids')
         choice(name: 'SEXE', choices: ['H', 'F'], description: 'Choisir votre sexe')
-        choice(name: 'OBJECTIFPOIDS', choices: ['40-50', '50-60', '70-80'], description: 'Choisir votre objectif de poids')
-
+        choice(name: 'OBJECTIFPOIDS', choices: ['40-50', '50-60', '60-70'], description: 'Choisir votre objectif de poids')
+        choice(name: 'OBJECTIFPRECEDENT', choices: ['Réussi', 'En cours', 'Échoué',"Nouveau (Pas d'objectif précédent)"], description: 'Indiquer le statut de votre objectif précédent')
     }
     environment {
         PRENOM = "${params.PRENOM}"
@@ -16,6 +16,7 @@ pipeline {
         POIDS = "${params.POIDS}"
         SEXE = "${params.SEXE}"
         OBJECTIFPOIDS = "${params.OBJECTIFPOIDS}"
+        OBJECTIFPRECEDENT = "${params.OBJECTIFPRECEDENT}"
     }
     stages {
         stage('Printing name') {
