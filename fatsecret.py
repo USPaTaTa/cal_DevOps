@@ -8,6 +8,7 @@ class fatsecret:
     self.poids = poids
     self.sexe = sexe
     self.objectifpoids = objectifpoids
+    self.objectifprecedent = objectifprecedent
     self.IMC()
     self.interpetrationIMC()
     
