@@ -39,7 +39,7 @@ class fatsecret:
       raise Exception('Erreur dans la fonction interpetrationIMC')
   
   def IMC(self):
-    taille_m = self.taille / 100
+    taille_m = int(self.taille) / 100
     imc = self.poids / (taille_m ** 2)
     self.imc = imc
     return imc
