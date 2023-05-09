@@ -9,13 +9,6 @@ class fatsecret:
     self.sexe = str(sexe)
     self.objectifpoids = str(objectifpoids)
     self.objectifprecedent = str(objectifprecedent)
-    print(type(self.prenom))
-    print(type(self.nom))
-    print(type(self.taille))
-    print(type(self.poids))
-    print(type(self.sexe))
-    print(type(self.objectifpoids))
-    print(type(self.objectifprecedent))
     self.IMC()
     self.interpetrationIMC()
     
@@ -64,375 +57,375 @@ class fatsecret:
     print(f'Objectif précédent: {self.objectifprecedent}')
     print(f'IMC: {self.imc}')
     print(f'Interprétation IMC: {self.interpetrationIMC}')
-    
+    print('---------------------------------')
     if self.sexe == "H":
       if self.objectifprecedent == "Réussi":
         if self.objectifpoids == "40-50":
           if self.imc < 16.5:
-            print("Programme sportif C et Programme alimentaire D ou Programme sportif E et Programme alimentaire B")
+            print("Programme proposé: Programme sportif C et Programme alimentaire D ou Programme sportif E et Programme alimentaire B")
           elif self.imc >= 16.5 and self.imc < 18.5:
-            print("Programme sportif B et Programme alimentaire C ou Programme sportif A et Programme alimentaire B")
+            print("Programme proposé: Programme sportif B et Programme alimentaire C ou Programme sportif A et Programme alimentaire B")
           elif self.imc >= 18.5 and self.imc < 25:
-            print('Programme sportif D et Programme alimentaire D ou Programme sportif D et Programme alimentaire E')
+            print('Programme proposé: Programme sportif D et Programme alimentaire D ou Programme sportif D et Programme alimentaire E')
           elif self.imc >= 25 and self.imc < 30:
-            print('Programme sportif E et Programme alimentaire D ou Programme sportif B et Programme alimentaire C')
+            print('Programme proposé: Programme sportif E et Programme alimentaire D ou Programme sportif B et Programme alimentaire C')
           elif self.imc >= 30 and self.imc < 35:
-            print('Programme sportif E et Programme alimentaire E ou Programme sportif C et Programme alimentaire D')
+            print('Programme proposé: Programme sportif E et Programme alimentaire E ou Programme sportif C et Programme alimentaire D')
           elif self.imc >= 35 and self.imc < 40:
-            print('Programme sportif A et Programme alimentaire C ou Programme sportif C et Programme alimentaire C')
+            print('Programme proposé: Programme sportif A et Programme alimentaire C ou Programme sportif C et Programme alimentaire C')
           elif self.imc >= 40:
-            print('Programme sportif E et Programme alimentaire C ou Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif E et Programme alimentaire C ou Programme sportif B et Programme alimentaire B')
         if self.objectifpoids == "50-60":
           if self.imc < 16.5:
-            print("Programme sportif C et Programme alimentaire D ou Programme sportif E et Programme alimentaire B")
+            print("Programme proposé: Programme sportif C et Programme alimentaire D ou Programme sportif E et Programme alimentaire B")
           elif self.imc >= 16.5 and self.imc < 18.5:
-            print("Programme sportif B et Programme alimentaire C ou Programme sportif A et Programme alimentaire B")
+            print("Programme proposé: Programme sportif B et Programme alimentaire C ou Programme sportif A et Programme alimentaire B")
           elif self.imc >= 18.5 and self.imc < 25:
-            print('Programme sportif D et Programme alimentaire D ou Programme sportif D et Programme alimentaire E')
+            print('Programme proposé: Programme sportif D et Programme alimentaire D ou Programme sportif D et Programme alimentaire E')
           elif self.imc >= 25 and self.imc < 30:
-            print('Programme sportif E et Programme alimentaire D ou Programme sportif B et Programme alimentaire C')
+            print('Programme proposé: Programme sportif E et Programme alimentaire D ou Programme sportif B et Programme alimentaire C')
           elif self.imc >= 30 and self.imc < 35:
-            print('Programme sportif E et Programme alimentaire E ou Programme sportif C et Programme alimentaire D')
+            print('Programme proposé: Programme sportif E et Programme alimentaire E ou Programme sportif C et Programme alimentaire D')
           elif self.imc >= 35 and self.imc < 40:
-            print('Programme sportif A et Programme alimentaire C ou Programme sportif C et Programme alimentaire C')
+            print('Programme proposé: Programme sportif A et Programme alimentaire C ou Programme sportif C et Programme alimentaire C')
           elif self.imc >= 40:
-            print('Programme sportif E et Programme alimentaire C ou Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif E et Programme alimentaire C ou Programme sportif B et Programme alimentaire B')
         if self.objectifpoids == "60-70":
           if self.imc < 16.5:
-            print("Programme sportif C et Programme alimentaire D ou Programme sportif E et Programme alimentaire B")
+            print("Programme proposé: Programme sportif C et Programme alimentaire D ou Programme sportif E et Programme alimentaire B")
           elif self.imc >= 16.5 and self.imc < 18.5:
-            print("Programme sportif B et Programme alimentaire C ou Programme sportif A et Programme alimentaire B")
+            print("Programme proposé: Programme sportif B et Programme alimentaire C ou Programme sportif A et Programme alimentaire B")
           elif self.imc >= 18.5 and self.imc < 25:
-            print('Programme sportif D et Programme alimentaire D ou Programme sportif D et Programme alimentaire E')
+            print('Programme proposé: Programme sportif D et Programme alimentaire D ou Programme sportif D et Programme alimentaire E')
           elif self.imc >= 25 and self.imc < 30:
-            print('Programme sportif E et Programme alimentaire D ou Programme sportif B et Programme alimentaire C')
+            print('Programme proposé: Programme sportif E et Programme alimentaire D ou Programme sportif B et Programme alimentaire C')
           elif self.imc >= 30 and self.imc < 35:
-            print('Programme sportif E et Programme alimentaire E ou Programme sportif C et Programme alimentaire D')
+            print('Programme proposé: Programme sportif E et Programme alimentaire E ou Programme sportif C et Programme alimentaire D')
           elif self.imc >= 35 and self.imc < 40:
-            print('Programme sportif A et Programme alimentaire C ou Programme sportif C et Programme alimentaire C')
+            print('Programme proposé: Programme sportif A et Programme alimentaire C ou Programme sportif C et Programme alimentaire C')
           elif self.imc >= 40:
-            print('Programme sportif E et Programme alimentaire C ou Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif E et Programme alimentaire C ou Programme sportif B et Programme alimentaire B')
       if self.objectifprecedent == "En cours":
         if self.objectifpoids == "40-50":
           if self.imc < 16.5:
-            print('Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire B')
           elif self.imc >= 16.5 and self.imc < 18.5:
-            print('Programme sportif C et Programme alimentaire C')
+            print('Programme proposé: Programme sportif C et Programme alimentaire C')
           elif self.imc >= 18.5 and self.imc < 25:
-            print('Programme sportif C et Programme alimentaire B')
+            print('Programme proposé: Programme sportif C et Programme alimentaire B')
           elif self.imc >= 25 and self.imc < 30:
-            print('Programme sportif E et Programme alimentaire E')
+            print('Programme proposé: Programme sportif E et Programme alimentaire E')
           elif self.imc >= 30 and self.imc < 35:
-            print('Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire B')
           elif self.imc >= 35 and self.imc < 40:
-            print('Programme sportif E et Programme alimentaire E')
+            print('Programme proposé: Programme sportif E et Programme alimentaire E')
           elif self.imc >= 40:
-            print('Programme sportif A et Programme alimentaire D')
+            print('Programme proposé: Programme sportif A et Programme alimentaire D')
         if self.objectifpoids == "50-60":
           if self.imc < 16.5:
-            print('Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire B')
           elif self.imc >= 16.5 and self.imc < 18.5:
-            print('Programme sportif C et Programme alimentaire C')
+            print('Programme proposé: Programme sportif C et Programme alimentaire C')
           elif self.imc >= 18.5 and self.imc < 25:
-            print('Programme sportif C et Programme alimentaire B')
+            print('Programme proposé: Programme sportif C et Programme alimentaire B')
           elif self.imc >= 25 and self.imc < 30:
-            print('Programme sportif E et Programme alimentaire E')
+            print('Programme proposé: Programme sportif E et Programme alimentaire E')
           elif self.imc >= 30 and self.imc < 35:
-            print('Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire B')
           elif self.imc >= 35 and self.imc < 40:
-            print('Programme sportif E et Programme alimentaire E')
+            print('Programme proposé: Programme sportif E et Programme alimentaire E')
           elif self.imc >= 40:
-            print('Programme sportif A et Programme alimentaire D')
+            print('Programme proposé: Programme sportif A et Programme alimentaire D')
         if self.objectifpoids == "60-70":
           if self.imc < 16.5:
-            print('Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire B')
           elif self.imc >= 16.5 and self.imc < 18.5:
-            print('Programme sportif C et Programme alimentaire C')
+            print('Programme proposé: Programme sportif C et Programme alimentaire C')
           elif self.imc >= 18.5 and self.imc < 25:
-            print('Programme sportif C et Programme alimentaire B')
+            print('Programme proposé: Programme sportif C et Programme alimentaire B')
           elif self.imc >= 25 and self.imc < 30:
-            print('Programme sportif E et Programme alimentaire E')
+            print('Programme proposé: Programme sportif E et Programme alimentaire E')
           elif self.imc >= 30 and self.imc < 35:
-            print('Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire B')
           elif self.imc >= 35 and self.imc < 40:
-            print('Programme sportif E et Programme alimentaire E')
+            print('Programme proposé: Programme sportif E et Programme alimentaire E')
           elif self.imc >= 40:
-            print('Programme sportif A et Programme alimentaire D')
+            print('Programme proposé: Programme sportif A et Programme alimentaire D')
       if self.objectifprecedent == "Échoué":
         if self.objectifpoids == "40-50":
           if self.imc < 16.5:
-            print('Programme alimentaire B et Programme sportif B ou Programme sportif A et Programme alimentaire A')
+            print('Programme proposé: Programme alimentaire B et Programme sportif B ou Programme sportif A et Programme alimentaire A')
           elif self.imc >= 16.5 and self.imc < 18.5:
-            print('Programme alimentaire D et Programme sportif D ou Programme sportif A et Programme alimentaire A')
+            print('Programme proposé: Programme alimentaire D et Programme sportif D ou Programme sportif A et Programme alimentaire A')
           elif self.imc >= 18.5 and self.imc < 25:
-            print('Programme alimentaire C et Programme sportif B ou Programme sportif D et Programme alimentaire E')
+            print('Programme proposé: Programme alimentaire C et Programme sportif B ou Programme sportif D et Programme alimentaire E')
           elif self.imc >= 25 and self.imc < 30:
-            print('Programme alimentaire C et Programme sportif C ou Programme sportif A et Programme alimentaire B')
+            print('Programme proposé: Programme alimentaire C et Programme sportif C ou Programme sportif A et Programme alimentaire B')
           elif self.imc >= 30 and self.imc < 35:
-            print('Programme alimentaire C et Programme sportif C ou Programme sportif E et Programme alimentaire A')
+            print('Programme proposé: Programme alimentaire C et Programme sportif C ou Programme sportif E et Programme alimentaire A')
           elif self.imc >= 35 and self.imc < 40:
-            print('Programme alimentaire E et Programme sportif E ou  Programme sportif A et Programme alimentaire C')
+            print('Programme proposé: Programme alimentaire E et Programme sportif E ou  Programme sportif A et Programme alimentaire C')
           elif self.imc >= 40:
-            print('Programme alimentaire B et Programme sportif A ou Programme sportif  et Programme alimentaire C')
+            print('Programme proposé: Programme alimentaire B et Programme sportif A ou Programme sportif  et Programme alimentaire C')
         if self.objectifpoids == "50-60":
           if self.imc < 16.5:
-            print('Programme alimentaire B et Programme sportif B ou Programme sportif A et Programme alimentaire A')
+            print('Programme proposé: Programme alimentaire B et Programme sportif B ou Programme sportif A et Programme alimentaire A')
           elif self.imc >= 16.5 and self.imc < 18.5:
-            print('Programme alimentaire D et Programme sportif D ou Programme sportif A et Programme alimentaire A')
+            print('Programme proposé: Programme alimentaire D et Programme sportif D ou Programme sportif A et Programme alimentaire A')
           elif self.imc >= 18.5 and self.imc < 25:
-            print('Programme alimentaire C et Programme sportif B ou Programme sportif D et Programme alimentaire E')
+            print('Programme proposé: Programme alimentaire C et Programme sportif B ou Programme sportif D et Programme alimentaire E')
           elif self.imc >= 25 and self.imc < 30:
-            print('Programme alimentaire C et Programme sportif C ou Programme sportif A et Programme alimentaire B')
+            print('Programme proposé: Programme alimentaire C et Programme sportif C ou Programme sportif A et Programme alimentaire B')
           elif self.imc >= 30 and self.imc < 35:
-            print('Programme alimentaire C et Programme sportif C ou Programme sportif E et Programme alimentaire A')
+            print('Programme proposé: Programme alimentaire C et Programme sportif C ou Programme sportif E et Programme alimentaire A')
           elif self.imc >= 35 and self.imc < 40:
-            print('Programme alimentaire E et Programme sportif E ou  Programme sportif A et Programme alimentaire C')
+            print('Programme proposé: Programme alimentaire E et Programme sportif E ou  Programme sportif A et Programme alimentaire C')
           elif self.imc >= 40:
-            print('Programme alimentaire B et Programme sportif A ou Programme sportif  et Programme alimentaire C')
+            print('Programme proposé: Programme alimentaire B et Programme sportif A ou Programme sportif  et Programme alimentaire C')
         if self.objectifpoids == "60-70":
           if self.imc < 16.5:
-            print('Programme alimentaire B et Programme sportif B ou Programme sportif A et Programme alimentaire A')
+            print('Programme proposé: Programme alimentaire B et Programme sportif B ou Programme sportif A et Programme alimentaire A')
           elif self.imc >= 16.5 and self.imc < 18.5:
-            print('Programme alimentaire D et Programme sportif D ou Programme sportif A et Programme alimentaire A')
+            print('Programme proposé: Programme alimentaire D et Programme sportif D ou Programme sportif A et Programme alimentaire A')
           elif self.imc >= 18.5 and self.imc < 25:
-            print('Programme alimentaire C et Programme sportif B ou Programme sportif D et Programme alimentaire E')
+            print('Programme proposé: Programme alimentaire C et Programme sportif B ou Programme sportif D et Programme alimentaire E')
           elif self.imc >= 25 and self.imc < 30:
-            print('Programme alimentaire C et Programme sportif C ou Programme sportif A et Programme alimentaire B')
+            print('Programme proposé: Programme alimentaire C et Programme sportif C ou Programme sportif A et Programme alimentaire B')
           elif self.imc >= 30 and self.imc < 35:
-            print('Programme alimentaire C et Programme sportif C ou Programme sportif E et Programme alimentaire A')
+            print('Programme proposé: Programme alimentaire C et Programme sportif C ou Programme sportif E et Programme alimentaire A')
           elif self.imc >= 35 and self.imc < 40:
-            print('Programme alimentaire E et Programme sportif E ou  Programme sportif A et Programme alimentaire C')
+            print('Programme proposé: Programme alimentaire E et Programme sportif E ou  Programme sportif A et Programme alimentaire C')
           elif self.imc >= 40:
-            print('Programme alimentaire B et Programme sportif A ou Programme sportif  et Programme alimentaire C')
+            print('Programme proposé: Programme alimentaire B et Programme sportif A ou Programme sportif  et Programme alimentaire C')
       if self.objectifprecedent == "Nouveau (Pas d'objectif précédent)":
         if self.objectifpoids == "40-50":
           if self.imc < 16.5:
-            print('Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire B')
           elif self.imc >= 16.5 and self.imc < 18.5:
-            print('Programme sportif C et Programme alimentaire C')
+            print('Programme proposé: Programme sportif C et Programme alimentaire C')
           elif self.imc >= 18.5 and self.imc < 25:
-            print('Programme sportif C et Programme alimentaire B')
+            print('Programme proposé: Programme sportif C et Programme alimentaire B')
           elif self.imc >= 25 and self.imc < 30:
-            print('Programme sportif E et Programme alimentaire E')
+            print('Programme proposé: Programme sportif E et Programme alimentaire E')
           elif self.imc >= 30 and self.imc < 35:
-            print('Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire B')
           elif self.imc >= 35 and self.imc < 40:
-            print('Programme sportif E et Programme alimentaire E')
+            print('Programme proposé: Programme sportif E et Programme alimentaire E')
           elif self.imc >= 40:
-            print('Programme sportif A et Programme alimentaire D')
+            print('Programme proposé: Programme sportif A et Programme alimentaire D')
         if self.objectifpoids == "50-60":
           if self.imc < 16.5:
-            print('Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire B')
           elif self.imc >= 16.5 and self.imc < 18.5:
-            print('Programme sportif C et Programme alimentaire C')
+            print('Programme proposé: Programme sportif C et Programme alimentaire C')
           elif self.imc >= 18.5 and self.imc < 25:
-            print('Programme sportif C et Programme alimentaire B')
+            print('Programme proposé: Programme sportif C et Programme alimentaire B')
           elif self.imc >= 25 and self.imc < 30:
-            print('Programme sportif E et Programme alimentaire E')
+            print('Programme proposé: Programme sportif E et Programme alimentaire E')
           elif self.imc >= 30 and self.imc < 35:
-            print('Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire B')
           elif self.imc >= 35 and self.imc < 40:
-            print('Programme sportif E et Programme alimentaire E')
+            print('Programme proposé: Programme sportif E et Programme alimentaire E')
           elif self.imc >= 40:
-            print('Programme sportif A et Programme alimentaire D')
+            print('Programme proposé: Programme sportif A et Programme alimentaire D')
         if self.objectifpoids == "60-70":
           if self.imc < 16.5:
-            print('Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire B')
           elif self.imc >= 16.5 and self.imc < 18.5:
-            print('Programme sportif C et Programme alimentaire C')
+            print('Programme proposé: Programme sportif C et Programme alimentaire C')
           elif self.imc >= 18.5 and self.imc < 25:
-            print('Programme sportif C et Programme alimentaire B')
+            print('Programme proposé: Programme sportif C et Programme alimentaire B')
           elif self.imc >= 25 and self.imc < 30:
-            print('Programme sportif E et Programme alimentaire E')
+            print('Programme proposé: Programme sportif E et Programme alimentaire E')
           elif self.imc >= 30 and self.imc < 35:
-            print('Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire B')
           elif self.imc >= 35 and self.imc < 40:
-            print('Programme sportif E et Programme alimentaire E')
+            print('Programme proposé: Programme sportif E et Programme alimentaire E')
           elif self.imc >= 40:
-            print('Programme sportif A et Programme alimentaire D')
+            print('Programme proposé: Programme sportif A et Programme alimentaire D')
     else:
       if self.objectifprecedent == "Réussi":
         if self.objectifpoids == "40-50":
           if self.imc < 16.5:
-            print('Programme sportif B et Programme alimentaire C ou Programme sportif A et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire C ou Programme sportif A et Programme alimentaire B')
           elif self.imc >= 16.5 and self.imc < 18.5:
-            print('Programme sportif C et Programme alimentaire D ou Programme sportif E et Programme alimentaire B')
+            print('Programme proposé: Programme sportif C et Programme alimentaire D ou Programme sportif E et Programme alimentaire B')
           elif self.imc >= 18.5 and self.imc < 25:
-            print('Programme sportif C et Programme alimentaire A')
+            print('Programme proposé: Programme sportif C et Programme alimentaire A')
           elif self.imc >= 25 and self.imc < 30:
-            print('Programme sportif E et Programme alimentaire D ou Programme sportif B et Programme alimentaire C')
+            print('Programme proposé: Programme sportif E et Programme alimentaire D ou Programme sportif B et Programme alimentaire C')
           elif self.imc >= 30 and self.imc < 35:
-            print('Programme sportif D et Programme alimentaire A ou Programme sportif A et Programme alimentaire C')
+            print('Programme proposé: Programme sportif D et Programme alimentaire A ou Programme sportif A et Programme alimentaire C')
           elif self.imc >= 35 and self.imc < 40:
-            print('Programme sportif E et Programme alimentaire D ou Programme sportif E et Programme alimentaire C')
+            print('Programme proposé: Programme sportif E et Programme alimentaire D ou Programme sportif E et Programme alimentaire C')
           elif self.imc >= 40:
-            print('Programme sportif A et Programme alimentaire B ou Programme sportif E et Programme alimentaire C')
+            print('Programme proposé: Programme sportif A et Programme alimentaire B ou Programme sportif E et Programme alimentaire C')
         if self.objectifpoids == "50-60":
           if self.imc < 16.5:
-            print('Programme sportif B et Programme alimentaire C ou Programme sportif A et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire C ou Programme sportif A et Programme alimentaire B')
           elif self.imc >= 16.5 and self.imc < 18.5:
-            print('Programme sportif C et Programme alimentaire D ou Programme sportif E et Programme alimentaire B')
+            print('Programme proposé: Programme sportif C et Programme alimentaire D ou Programme sportif E et Programme alimentaire B')
           elif self.imc >= 18.5 and self.imc < 25:
-            print('Programme sportif C et Programme alimentaire A')
+            print('Programme proposé: Programme sportif C et Programme alimentaire A')
           elif self.imc >= 25 and self.imc < 30:
-            print('Programme sportif E et Programme alimentaire D ou Programme sportif B et Programme alimentaire C')
+            print('Programme proposé: Programme sportif E et Programme alimentaire D ou Programme sportif B et Programme alimentaire C')
           elif self.imc >= 30 and self.imc < 35:
-            print('Programme sportif D et Programme alimentaire A ou Programme sportif A et Programme alimentaire C')
+            print('Programme proposé: Programme sportif D et Programme alimentaire A ou Programme sportif A et Programme alimentaire C')
           elif self.imc >= 35 and self.imc < 40:
-            print('Programme sportif E et Programme alimentaire D ou Programme sportif E et Programme alimentaire C')
+            print('Programme proposé: Programme sportif E et Programme alimentaire D ou Programme sportif E et Programme alimentaire C')
           elif self.imc >= 40:
-            print('Programme sportif A et Programme alimentaire B ou Programme sportif E et Programme alimentaire C')
+            print('Programme proposé: Programme sportif A et Programme alimentaire B ou Programme sportif E et Programme alimentaire C')
         if self.objectifpoids == "60-70":
           if self.imc < 16.5:
-            print('Programme sportif B et Programme alimentaire C ou Programme sportif A et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire C ou Programme sportif A et Programme alimentaire B')
           elif self.imc >= 16.5 and self.imc < 18.5:
-            print('Programme sportif C et Programme alimentaire D ou Programme sportif E et Programme alimentaire B')
+            print('Programme proposé: Programme sportif C et Programme alimentaire D ou Programme sportif E et Programme alimentaire B')
           elif self.imc >= 18.5 and self.imc < 25:
-            print('Programme sportif C et Programme alimentaire A')
+            print('Programme proposé: Programme sportif C et Programme alimentaire A')
           elif self.imc >= 25 and self.imc < 30:
-            print('Programme sportif E et Programme alimentaire D ou Programme sportif B et Programme alimentaire C')
+            print('Programme proposé: Programme sportif E et Programme alimentaire D ou Programme sportif B et Programme alimentaire C')
           elif self.imc >= 30 and self.imc < 35:
-            print('Programme sportif D et Programme alimentaire A ou Programme sportif A et Programme alimentaire C')
+            print('Programme proposé: Programme sportif D et Programme alimentaire A ou Programme sportif A et Programme alimentaire C')
           elif self.imc >= 35 and self.imc < 40:
-            print('Programme sportif E et Programme alimentaire D ou Programme sportif E et Programme alimentaire C')
+            print('Programme proposé: Programme sportif E et Programme alimentaire D ou Programme sportif E et Programme alimentaire C')
           elif self.imc >= 40:
-            print('Programme sportif A et Programme alimentaire B ou Programme sportif E et Programme alimentaire C')
+            print('Programme proposé: Programme sportif A et Programme alimentaire B ou Programme sportif E et Programme alimentaire C')
       if self.objectifprecedent == "En cours":
         if self.objectifpoids == "40-50":
           if self.imc < 16.5:
-            print('Programme sportif A et Programme alimentaire A')
+            print('Programme proposé: Programme sportif A et Programme alimentaire A')
           elif self.imc >= 16.5 and self.imc < 18.5:
-            print('Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire B')
           elif self.imc >= 18.5 and self.imc < 25:
-            print('Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire B')
           elif self.imc >= 25 and self.imc < 30:
-            print('Programme sportif D et Programme alimentaire A')
+            print('Programme proposé: Programme sportif D et Programme alimentaire A')
           elif self.imc >= 30 and self.imc < 35:
-            print('Programme sportif A et Programme alimentaire D')
+            print('Programme proposé: Programme sportif A et Programme alimentaire D')
           elif self.imc >= 35 and self.imc < 40:
-            print('Programme sportif D et Programme alimentaire E')
+            print('Programme proposé: Programme sportif D et Programme alimentaire E')
           elif self.imc >= 40:
-            print('Programme sportif D et Programme alimentaire D')
+            print('Programme proposé: Programme sportif D et Programme alimentaire D')
         if self.objectifpoids == "50-60":
           if self.imc < 16.5:
-            print('Programme sportif A et Programme alimentaire A')
+            print('Programme proposé: Programme sportif A et Programme alimentaire A')
           elif self.imc >= 16.5 and self.imc < 18.5:
-            print('Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire B')
           elif self.imc >= 18.5 and self.imc < 25:
-            print('Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire B')
           elif self.imc >= 25 and self.imc < 30:
-            print('Programme sportif D et Programme alimentaire A')
+            print('Programme proposé: Programme sportif D et Programme alimentaire A')
           elif self.imc >= 30 and self.imc < 35:
-            print('Programme sportif A et Programme alimentaire D')
+            print('Programme proposé: Programme sportif A et Programme alimentaire D')
           elif self.imc >= 35 and self.imc < 40:
-            print('Programme sportif D et Programme alimentaire E')
+            print('Programme proposé: Programme sportif D et Programme alimentaire E')
           elif self.imc >= 40:
-            print('Programme sportif D et Programme alimentaire D')
+            print('Programme proposé: Programme sportif D et Programme alimentaire D')
         if self.objectifpoids == "60-70":
           if self.imc < 16.5:
-            print('Programme sportif A et Programme alimentaire A')
+            print('Programme proposé: Programme sportif A et Programme alimentaire A')
           elif self.imc >= 16.5 and self.imc < 18.5:
-            print('Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire B')
           elif self.imc >= 18.5 and self.imc < 25:
-            print('Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire B')
           elif self.imc >= 25 and self.imc < 30:
-            print('Programme sportif D et Programme alimentaire A')
+            print('Programme proposé: Programme sportif D et Programme alimentaire A')
           elif self.imc >= 30 and self.imc < 35:
-            print('Programme sportif A et Programme alimentaire D')
+            print('Programme proposé: Programme sportif A et Programme alimentaire D')
           elif self.imc >= 35 and self.imc < 40:
-            print('Programme sportif D et Programme alimentaire E')
+            print('Programme proposé: Programme sportif D et Programme alimentaire E')
           elif self.imc >= 40:
-            print('Programme sportif D et Programme alimentaire D')
+            print('Programme proposé: Programme sportif D et Programme alimentaire D')
       if self.objectifprecedent == "Échoué":
         if self.objectifpoids == "40-50":
           if self.imc < 16.5:
-            print('Programme alimentaire A et Programme sportif A')
+            print('Programme proposé: Programme alimentaire A et Programme sportif A')
           elif self.imc >= 16.5 and self.imc < 18.5:
-            print('Programme alimentaire B et Programme sportif B ou Programme sportif A et Programme alimentaire A')
+            print('Programme proposé: Programme alimentaire B et Programme sportif B ou Programme sportif A et Programme alimentaire A')
           elif self.imc >= 18.5 and self.imc < 25:
-            print('Programme alimentaire B et Programme sportif B ou Programme sportif A et Programme alimentaire C')
+            print('Programme proposé: Programme alimentaire B et Programme sportif B ou Programme sportif A et Programme alimentaire C')
           elif self.imc >= 25 and self.imc < 30:
-            print('Programme alimentaire D et Programme sportif A ou Programme sportif C et Programme alimentaire C')
+            print('Programme proposé: Programme alimentaire D et Programme sportif A ou Programme sportif C et Programme alimentaire C')
           elif self.imc >= 30 and self.imc < 35:
-            print('Programme alimentaire A et Programme sportif D')
+            print('Programme proposé: Programme alimentaire A et Programme sportif D')
           elif self.imc >= 35 and self.imc < 40:
-            print('Programme alimentaire D et Programme sportif E ou Programme sportif E et Programme alimentaire C')
+            print('Programme proposé: Programme alimentaire D et Programme sportif E ou Programme sportif E et Programme alimentaire C')
           elif self.imc >= 40:
-            print('Programme alimentaire E et Programme sportif E ou Programme sportif  et Programme alimentaire B')
+            print('Programme proposé: Programme alimentaire E et Programme sportif E ou Programme sportif  et Programme alimentaire B')
         if self.objectifpoids == "50-60":
           if self.imc < 16.5:
-            print('Programme alimentaire A et Programme sportif A')
+            print('Programme proposé: Programme alimentaire A et Programme sportif A')
           elif self.imc >= 16.5 and self.imc < 18.5:
-            print('Programme alimentaire B et Programme sportif B ou Programme sportif A et Programme alimentaire A')
+            print('Programme proposé: Programme alimentaire B et Programme sportif B ou Programme sportif A et Programme alimentaire A')
           elif self.imc >= 18.5 and self.imc < 25:
-            print('Programme alimentaire B et Programme sportif B ou Programme sportif A et Programme alimentaire C')
+            print('Programme proposé: Programme alimentaire B et Programme sportif B ou Programme sportif A et Programme alimentaire C')
           elif self.imc >= 25 and self.imc < 30:
-            print('Programme alimentaire D et Programme sportif A ou Programme sportif C et Programme alimentaire C')
+            print('Programme proposé: Programme alimentaire D et Programme sportif A ou Programme sportif C et Programme alimentaire C')
           elif self.imc >= 30 and self.imc < 35:
-            print('Programme alimentaire A et Programme sportif D')
+            print('Programme proposé: Programme alimentaire A et Programme sportif D')
           elif self.imc >= 35 and self.imc < 40:
-            print('Programme alimentaire D et Programme sportif E ou Programme sportif E et Programme alimentaire C')
+            print('Programme proposé: Programme alimentaire D et Programme sportif E ou Programme sportif E et Programme alimentaire C')
           elif self.imc >= 40:
-            print('Programme alimentaire E et Programme sportif E ou Programme sportif  et Programme alimentaire B')
+            print('Programme proposé: Programme alimentaire E et Programme sportif E ou Programme sportif  et Programme alimentaire B')
         if self.objectifpoids == "60-70":
           if self.imc < 16.5:
-            print('Programme alimentaire A et Programme sportif A')
+            print('Programme proposé: Programme alimentaire A et Programme sportif A')
           elif self.imc >= 16.5 and self.imc < 18.5:
-            print('Programme alimentaire B et Programme sportif B ou Programme sportif A et Programme alimentaire A')
+            print('Programme proposé: Programme alimentaire B et Programme sportif B ou Programme sportif A et Programme alimentaire A')
           elif self.imc >= 18.5 and self.imc < 25:
-            print('Programme alimentaire B et Programme sportif B ou Programme sportif A et Programme alimentaire C')
+            print('Programme proposé: Programme alimentaire B et Programme sportif B ou Programme sportif A et Programme alimentaire C')
           elif self.imc >= 25 and self.imc < 30:
-            print('Programme alimentaire D et Programme sportif A ou Programme sportif C et Programme alimentaire C')
+            print('Programme proposé: Programme alimentaire D et Programme sportif A ou Programme sportif C et Programme alimentaire C')
           elif self.imc >= 30 and self.imc < 35:
-            print('Programme alimentaire A et Programme sportif D')
+            print('Programme proposé: Programme alimentaire A et Programme sportif D')
           elif self.imc >= 35 and self.imc < 40:
-            print('Programme alimentaire D et Programme sportif E ou Programme sportif E et Programme alimentaire C')
+            print('Programme proposé: Programme alimentaire D et Programme sportif E ou Programme sportif E et Programme alimentaire C')
           elif self.imc >= 40:
-            print('Programme alimentaire E et Programme sportif E ou Programme sportif  et Programme alimentaire B')
+            print('Programme proposé: Programme alimentaire E et Programme sportif E ou Programme sportif  et Programme alimentaire B')
       if self.objectifprecedent == "Nouveau (Pas d'objectif précédent)":
         if self.objectifpoids == "40-50":
           if self.imc < 16.5:
-            print('Programme sportif A et Programme alimentaire A')
+            print('Programme proposé: Programme sportif A et Programme alimentaire A')
           elif self.imc >= 16.5 and self.imc < 18.5:
-            print('Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire B')
           elif self.imc >= 18.5 and self.imc < 25:
-            print('Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire B')
           elif self.imc >= 25 and self.imc < 30:
-            print('Programme sportif D et Programme alimentaire A')
+            print('Programme proposé: Programme sportif D et Programme alimentaire A')
           elif self.imc >= 30 and self.imc < 35:
-            print('Programme sportif A et Programme alimentaire D')
+            print('Programme proposé: Programme sportif A et Programme alimentaire D')
           elif self.imc >= 35 and self.imc < 40:
-            print('Programme sportif D et Programme alimentaire E')
+            print('Programme proposé: Programme sportif D et Programme alimentaire E')
           elif self.imc >= 40:
-            print('Programme sportif D et Programme alimentaire D')
+            print('Programme proposé: Programme sportif D et Programme alimentaire D')
         if self.objectifpoids == "50-60":
           if self.imc < 16.5:
-            print('Programme sportif A et Programme alimentaire A')
+            print('Programme proposé: Programme sportif A et Programme alimentaire A')
           elif self.imc >= 16.5 and self.imc < 18.5:
-            print('Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire B')
           elif self.imc >= 18.5 and self.imc < 25:
-            print('Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire B')
           elif self.imc >= 25 and self.imc < 30:
-            print('Programme sportif D et Programme alimentaire A')
+            print('Programme proposé: Programme sportif D et Programme alimentaire A')
           elif self.imc >= 30 and self.imc < 35:
-            print('Programme sportif A et Programme alimentaire D')
+            print('Programme proposé: Programme sportif A et Programme alimentaire D')
           elif self.imc >= 35 and self.imc < 40:
-            print('Programme sportif D et Programme alimentaire E')
+            print('Programme proposé: Programme sportif D et Programme alimentaire E')
           elif self.imc >= 40:
-            print('Programme sportif D et Programme alimentaire D')
+            print('Programme proposé: Programme sportif D et Programme alimentaire D')
         if self.objectifpoids == "60-70":
           if self.imc < 16.5:
-            print('Programme sportif A et Programme alimentaire A')
+            print('Programme proposé: Programme sportif A et Programme alimentaire A')
           elif self.imc >= 16.5 and self.imc < 18.5:
-            print('Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire B')
           elif self.imc >= 18.5 and self.imc < 25:
-            print('Programme sportif B et Programme alimentaire B')
+            print('Programme proposé: Programme sportif B et Programme alimentaire B')
           elif self.imc >= 25 and self.imc < 30:
-            print('Programme sportif D et Programme alimentaire A')
+            print('Programme proposé: Programme sportif D et Programme alimentaire A')
           elif self.imc >= 30 and self.imc < 35:
-            print('Programme sportif A et Programme alimentaire D')
+            print('Programme proposé: Programme sportif A et Programme alimentaire D')
           elif self.imc >= 35 and self.imc < 40:
-            print('Programme sportif D et Programme alimentaire E')
+            print('Programme proposé: Programme sportif D et Programme alimentaire E')
           elif self.imc >= 40:
-            print('Programme sportif D et Programme alimentaire D')
+            print('Programme proposé: Programme sportif D et Programme alimentaire D')
     print('---------------------------------')
