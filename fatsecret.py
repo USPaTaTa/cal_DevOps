@@ -10,9 +10,9 @@ class fatsecret:
     self.objectifpoids = str(objectifpoids)
     self.objectifprecedent = str(objectifprecedent)
     self.IMC()
-    self.interpetrationIMC()
+    self.interpetration_IMC()
     
-  def interpetrationIMC(self):
+  def interpetration_IMC(self):
     if self.imc == None:
       raise Exception('Erreur dans la fonction interpetrationIMC')
     if self.imc < 16.5:
