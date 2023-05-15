@@ -22,19 +22,10 @@ pipeline {
         stage('Printing name') {
             steps {
                 script {
-                container = sh (
-                    script: "docker ps -a -q",
-                    returnStatus: true
-                ) == 0
-                volume = sh (
-                    script: "docker volume ls -q",
-                    returnStatus: true
-                ) == 0
-                image = sh (
-                    script: "docker image ls -q",
-                    returnStatus: true
-                ) == 0
-                sh "docker compose down && docker rm -f ${container} && docker volume rm ${volume} && docker rmi -f ${image} && docker compose build --no-cache && docker compose up"
+                sh "docker ps -aq | xargs docker rm -f"
+                sh "docker volume ls -q | xargs docker volume rm"
+                sh "docker images -q | xargs docker rmi -f"
+                sh "docker compose build --no-cache && docker compose up"
 
                 }
             }
