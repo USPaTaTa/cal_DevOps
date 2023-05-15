@@ -2,6 +2,9 @@ services:
   python_script:
     container_name: python_script
     build: .
+    depends_on:
+      bdd_fatsecret:
+          condition: service_healthy
     environment:
       - PRENOM=${PRENOM}
       - NOM=${NOM}
@@ -10,3 +13,24 @@ services:
       - SEXE=${SEXE}
       - OBJECTIFPOIDS=${OBJECTIFPOIDS}
       - OBJECTIFPRECEDENT=${OBJECTIFPRECEDENT}
+  bdd_fatsecret:
+    container_name: mysql
+    image: mysql
+    expose:
+      - 3306
+    healthcheck:
+            test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+            timeout: 1s
+            retries: 1
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/1.sql:ro
+    environment:
+      - MYSQL_ROOT_PASSWORD=R00t
+      - MYSQL_DATABASE=bdd_fatsecret
+      - MYSQL_USER=sysadmin
+      - MYSQL_PASSWORD=sysadmin1234
+
+volumes:
+  mysql_data:
+    # external: true

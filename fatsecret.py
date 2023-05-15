@@ -1,3 +1,9 @@
+# Import de bibliothèque pour se connecter à une base de données MySQL
+import mysql.connector
+from datetime import datetime
+
+# récupération de la date et de l'heure actuelle
+
 
 class fatsecret:
   """Objet """
@@ -10,6 +16,12 @@ class fatsecret:
     self.objectifpoids = str(objectifpoids)
     self.objectifprecedent = str(objectifprecedent)
     self.IMC()
+    self.time = datetime.now()
+    self.bdd = mysql.connector.connect(
+      host="mysql",
+      user="sysadmin",
+      password="sysadmin1234"
+    ) 
     # self.interpetration_IMC()
     
   def interpetration_IMC(self):
@@ -429,3 +441,11 @@ class fatsecret:
           elif self.imc >= 40:
             print('Programme proposé: Programme sportif D et Programme alimentaire D')
     print('---------------------------------')
+    
+      # Insertion des données dans la base de données
+    self.cursor = self.bdd.cursor()
+    self.cursor.execute('USE bdd_fatsecret')
+    self.cursor.execute('''INSERT INTO fatsecret (time, nom, prenom, age, sexe, poids, taille, imc, objectifpoids, objectifprecedent, interpretation_IMC) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)''', (self.date.strftime('%d/%m/%Y à %H:%M:%S'),self.nom, self.prenom, self.age, self.sexe, self.poids, self.taille, self.imc, self.objectifpoids, self.objectifprecedent, self.interpetration_IMC))
+    # Affichage des données insérées
+    self.cursor.execute('''SELECT * FROM fatsecret''')
+    print(self.cursor.fetchall())
