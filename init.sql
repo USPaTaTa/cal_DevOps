@@ -12,4 +12,4 @@ CREATE TABLE fatsecret (
   objectifpoids varchar(255) NOT NULL,
   objectifprecedent varchar(255) NOT NULL,
   interpretation_IMC varchar(255) NOT NULL,
-)ENGINE='InnoDB' DEFAULT CHARSET='utf8mb4' COLLATE='utf8mb4_0900_ai_ci';
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
