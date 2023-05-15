@@ -25,7 +25,7 @@ pipeline {
                 sh "docker ps -aq | xargs docker rm -f || true"
                 // sh "docker volume ls -q | xargs docker volume rm -f || true"
                 sh "docker images -q | xargs docker rmi -f || true"
-                sh "docker compose down && docker compose build --no-cache && docker compose up && docker compose down"
+                sh "docker compose down && docker compose build --no-cache && docker compose up --abort-on-container-exit && docker compose down"
 
                 }
             }
