@@ -33,4 +33,4 @@ services:
 
 volumes:
   mysql_data:
-    # external: true
+    external: true
