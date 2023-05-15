@@ -446,7 +446,7 @@ class fatsecret:
     self.cursor = self.bdd.cursor()
     self.cursor.execute('USE bdd_fatsecret')
     formatted_time = self.time.strftime('%d/%m/%Y à %H:%M:%S')
-    self.cursor.execute('''INSERT INTO fatsecret (time, nom, prenom, sexe, poids, taille, imc, objectifpoids, objectifprecedent, interpretation_IMC) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)''', (formatted_time,self.nom, self.prenom, self.sexe, str(self.poids), str(self.taille), str(self.imc), self.objectifpoids, self.objectifprecedent, self.interpetration_IMC))
+    self.cursor.execute('''INSERT INTO fatsecret (date_time, nom, prenom, sexe, poids, taille, imc, objectifpoids, objectifprecedent, interpretation_IMC) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)''', (formatted_time,self.nom, self.prenom, self.sexe, str(self.poids), str(self.taille), str(self.imc), self.objectifpoids, self.objectifprecedent, self.interpetration_IMC))
     # Affichage des données insérées
     self.cursor.execute('''SELECT * FROM fatsecret''')
     print(self.cursor.fetchall())

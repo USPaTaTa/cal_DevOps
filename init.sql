@@ -2,7 +2,7 @@ USE `bdd_fatsecret`;
 
 CREATE TABLE fatsecret(
   idfatsecret int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  time varchar(255) NOT NULL,
+  date_time varchar(255) NOT NULL,
   nom varchar(255) NOT NULL,
   prenom varchar(255) NOT NULL,
   sexe varchar(255) NOT NULL,
