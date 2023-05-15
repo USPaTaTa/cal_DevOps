@@ -19,14 +19,38 @@ pipeline {
         OBJECTIFPRECEDENT = "${params.OBJECTIFPRECEDENT}"
     }
     stages {
-        stage('Printing name') {
+        stage('Clean Docker Containers, Images') {
             steps {
                 script {
                 sh "docker ps -aq | xargs docker rm -f || true"
                 // sh "docker volume ls -q | xargs docker volume rm -f || true"
-                sh "docker images -q | xargs docker rmi -f || true"
-                sh "docker compose down && docker compose build --no-cache && docker compose up --abort-on-container-exit && docker compose down"
-
+                }
+            }
+            steps {
+                script {
+                    sh "docker images -q | xargs docker rmi -f || true"
+                }
+            }
+        }
+        stage('Starting APP') {
+            steps {
+                script {
+                    sh "docker compose down"
+                }
+            }
+            steps {
+                script {
+                    sh "docker compose build --no-cache"
+                }
+            }
+            steps {
+                script {
+                    sh "docker compose up --abort-on-container-exit"
+                }
+            }
+            steps {
+                script {
+                    sh "docker compose down"
                 }
             }
         }
