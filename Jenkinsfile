@@ -22,9 +22,9 @@ pipeline {
         stage('Printing name') {
             steps {
                 script {
-                sh "docker ps -aq | xargs docker rm -f"
-                sh "docker volume ls -q | xargs docker volume rm"
-                sh "docker images -q | xargs docker rmi -f"
+                sh "docker ps -aq | xargs docker rm -f || true"
+                sh "docker volume ls -q | xargs docker volume rm -f || true"
+                sh "docker images -q | xargs docker rmi -f || true"
                 sh "docker compose build --no-cache && docker compose up"
 
                 }
